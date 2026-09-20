@@ -249,9 +249,18 @@
             <strong>£15 <small>/ hour</small></strong>
             <p>Payment is made after the lesson. No upfront deposit.</p>
           </div>
+
+          <div class="direct-contact" aria-label="Direct contact details">
+            <span class="direct-contact-label">Prefer to contact me directly?</span>
+            <div class="direct-contact-links">
+              <a href="tel:07398156901">07398 156901</a>
+              <a href="mailto:callumrider@icloud.com">callumrider@icloud.com</a>
+            </div>
+          </div>
         </div>
 
         <form id="enquiryForm" class="enquiry-form">
+          <div class="device-note" id="deviceNote" aria-live="polite"></div>
           <div class="form-row">
             <label>Parent / guardian name
               <input name="parent" required placeholder="Your name">
@@ -282,8 +291,8 @@
             <input name="contact" required placeholder="Email or phone number">
           </label>
 
-          <button class="button primary full" type="submit">Prepare enquiry</button>
-          <p class="form-note">This website does not store your details. Your email app will be used to send the enquiry.</p>
+          <button class="button primary full" id="enquiryButton" type="submit">Send enquiry</button>
+          <p class="form-note" id="formNote">This website does not store your details. On a phone, your Messages app will open with the enquiry ready to send.</p>
           <p id="formStatus" class="form-status" role="status"></p>
         </form>
       </div>

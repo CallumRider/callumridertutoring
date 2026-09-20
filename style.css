@@ -340,6 +340,49 @@ nav a:hover { color: var(--blue); }
 .form-note { color: #71808e; font-size: .7rem; text-align: center; }
 .form-status { color: var(--blue); font-size: .82rem; text-align: center; min-height: 1.2em; font-weight: 600; }
 
+
+.direct-contact {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,.18);
+}
+.direct-contact-label {
+  display: block;
+  color: #aebdca;
+  font-size: .78rem;
+  margin-bottom: 8px;
+}
+.direct-contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.direct-contact-links a {
+  color: #fff;
+  font-weight: 700;
+  word-break: break-word;
+}
+.direct-contact-links a:hover { color: #79bdff; }
+.device-note {
+  display: none;
+  color: #52606d;
+  background: #f4f7fa;
+  border: 1px solid #dfe5eb;
+  padding: 11px 13px;
+  font-size: .78rem;
+  line-height: 1.45;
+}
+@media (max-width: 700px) {
+  .device-note { display: block; }
+  .enquiry-form input, .enquiry-form textarea, .enquiry-form select {
+    min-height: 50px;
+    font-size: 16px;
+  }
+  .enquiry-form textarea { min-height: 125px; }
+  .enquiry-form .button { min-height: 54px; }
+  .direct-contact-links a { padding: 3px 0; }
+}
+
 footer { background: #0a1728; color: #b9c6d2; padding: 54px 0 22px; }
 .footer-top {
   display: grid;
